@@ -10,7 +10,7 @@ function Form(props) {
   return (
     <form className={`form form_type_${props.type}`} onSubmit={handleSubmit} noValidate={true} >
       <div className={`form__title-info form__title-info_type_${props.type}`}>
-        {props.logo && <h1>@officecreatoes</h1>}
+        {props.logo && <h1>@officecreators</h1>}
         <h1 className={`form__heading form__heading_type_${props.type}`}>{props.heading}</h1>
       </div>
       {props.children}

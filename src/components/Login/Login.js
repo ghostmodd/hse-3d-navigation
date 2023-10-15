@@ -52,7 +52,8 @@ function Login(props) {
 
   return (
     <main className="main">
-      <Form type="auth" logo={true} heading="Рады видеть!" onSubmit={() => { onLogin() }}>
+      <Form type="auth" logo={true} onSubmit={() => { onLogin() }}>
+
         <fieldset className="authentication fieldset">
           <div className="form__input-container form__input-container_type_auth">
             <label className="authentication__input-label" htmlFor="registration-email-input">E-mail</label>

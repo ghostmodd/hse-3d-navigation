@@ -4,6 +4,7 @@ import mainApi from "../../utils/api/MainApi"
 import Landing from "../Landing/Landing";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import AR from "../AR/AR";
 
 function App() {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ function App() {
         toggleIsLogged(true);
       })
       .then(() => {
-        navigate("/movies", { replace: true })
+        navigate("/ar", { replace: true })
       })
       .catch((err) => {
         if (err === 401) {
@@ -82,36 +83,16 @@ function App() {
       });
   }
 
-  function handleEditProfile(userParams = {}) {
-    mainApi.editProfile(userParams)
-      .then((res) => {
-        setUserInfo({
-          ...userInfo,
-          name: res.name,
-          email: res.email,
-        })
-      })
-      .then(() => {
-        setProfileNotification("Данные успешно сохранены!");
-      })
-      .catch((err) => {
-        if (err === 409) {
-          setProfileFormError("Пользователь с таким email уже существует.");
-        } else {
-          setProfileFormError("При обновлении профиля произошла ошибка.");
-        }
-      });
-  }
-
   return (
     <div className="">
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/hse-3d-navigation" element={<Landing />} />
         <Route path="/signup" element={<Register onRegister={handleRegister} formError={registerFormError}
           setFormError={setRegisterFormError} />} />
 
         <Route path="/signin"
           element={<Login onLogin={handleLogin} formError={loginFormError} setFormError={setLoginFormError} />} />
+        <Route path="/ar" element={<AR />} />
       </Routes>
     </div>
   );
