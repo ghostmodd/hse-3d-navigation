@@ -1,0 +1,136 @@
+.authentication {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-top: 36px;
+}
+
+.authentication__input-label {
+  font-size: 10px;
+  color: #8B8B8B;
+}
+
+.authentication__input {
+  font-size: 14px;
+  color: white;
+  background-color: inherit;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #424242;
+  transition: border-bottom-color .1s ease-in;
+}
+
+.authentication__input:focus {
+  border-bottom-color: #4285F4;
+}
+
+.authentication__input_type_error {
+  color: #EE3465;
+}
+
+.authentication__input-error {
+  min-height: 15px;
+  font-size: 10px;
+  color: #EE3465;
+  margin: 0;
+}
+
+.authentication__btn-submit {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  border-radius: 3px;
+  padding: 14px 0;
+  background-color: #4285F4;
+  margin-bottom: 16px;
+}
+
+.authentication__btn-submit_disabled {
+  background-color: #303030;
+  color: #DADADA;
+  cursor: default;
+}
+
+.authentication__btn-submit_disabled:hover {
+  opacity: 1;
+}
+
+.authentication__toolbar {
+  width: 100%;
+}
+
+.authentication__toolbar_type_registration {
+  margin-top: 81px;
+}
+
+.authentication__toolbar_type_login {
+  margin-top: 162px;
+}
+
+.authentication__btn-change-approach-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.authentication__btn-change-approach-text {
+  font-size: 14px;
+  color: #8B8B8B;
+  margin: 0;
+}
+
+.authentication__btn-change-approach {
+  font-size: 14px;
+  color: #4285F4;
+  background-color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .authentication__toolbar_type_login {
+    margin-top: 172px;
+  }
+
+  .authentication__toolbar_type_registration {
+    margin-top: 92px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .authentication {
+    align-items: center;
+  }
+
+  .authentication {
+    margin-top: 78px;
+    gap: 21px;
+  }
+
+  .authentication__input {
+    padding-bottom: 8px;
+  }
+
+  .authentication__toolbar {
+    width: 260px;
+  }
+
+  .authentication__toolbar_type_registration {
+    margin-top: 178px;
+  }
+
+  .authentication__toolbar_type_login {
+    margin-top: 259px;
+  }
+
+  .authentication__btn-submit {
+    font-size: 12px;
+  }
+
+  .authentication__btn-change-approach-text {
+    font-size: 12px;
+  }
+
+  .authentication__btn-change-approach {
+    font-size: 12px;
+  }
+}
