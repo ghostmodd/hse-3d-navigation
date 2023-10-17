@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hse-3d-navigation/static/css/main.d8b3d4ff.css",
-    "main.js": "/hse-3d-navigation/static/js/main.d593f91d.js",
+    "main.css": "/hse-3d-navigation/static/css/main.0fbb55c5.css",
+    "main.js": "/hse-3d-navigation/static/js/main.5df18df5.js",
     "static/js/787.28cb0dcd.chunk.js": "/hse-3d-navigation/static/js/787.28cb0dcd.chunk.js",
     "static/media/iPhone 13 Pro.png": "/hse-3d-navigation/static/media/iPhone 13 Pro.082008fe5382507caf28.png",
     "index.html": "/hse-3d-navigation/index.html",
-    "main.d8b3d4ff.css.map": "/hse-3d-navigation/static/css/main.d8b3d4ff.css.map",
-    "main.d593f91d.js.map": "/hse-3d-navigation/static/js/main.d593f91d.js.map",
+    "main.0fbb55c5.css.map": "/hse-3d-navigation/static/css/main.0fbb55c5.css.map",
+    "main.5df18df5.js.map": "/hse-3d-navigation/static/js/main.5df18df5.js.map",
     "787.28cb0dcd.chunk.js.map": "/hse-3d-navigation/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8b3d4ff.css",
-    "static/js/main.d593f91d.js"
+    "static/css/main.0fbb55c5.css",
+    "static/js/main.5df18df5.js"
   ]
 }
